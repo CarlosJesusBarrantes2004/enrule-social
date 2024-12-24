@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset password</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/b6699a1f2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-gray-100 flex flex-col gap-2 items-center justify-center h-screen"
+  >
+    <div id="message-container"></div>
+    <form id="reset-password" class="hidden flex flex-col space-y-4">
+      <input
+        type="password"
+        id="password"
+        placeholder="New Password"
+        class="p-2 border border-gray-300 rounded-md"
+      />
+      <input
+        type="password"
+        id="confirm-password"
+        placeholder="Confirm Password"
+        class="p-2 border border-gray-300 rounded-md"
+      />
+      <button
+        type="submit"
+        class="rounded-md bg-blue-500 px-4 py-2 text-white font-semibold hover:bg-blue-700"
+      >
+        Reset Password
+      </button>
+    </form>
+    <script type="module" src="/users/reset-password/main.js"></script>
+  </body>
+</html>
